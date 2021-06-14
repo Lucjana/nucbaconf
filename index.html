@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>Nucba-Conf</h1>
+                <p>Somos chetos</p>
+                <p>Cheto mal</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>entrada</p>
+                <p class="price">$500</p>
+                <p>vip + foto con facu</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>entrada</p>
+                <p class="price">$200</p>
+                <p>AL FONDO Y 🍺🍺🍺</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9747;</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Speakers</a>
+                </li>
+                <li>
+                    <a href="">Precios</a>
+                </li>
+                <li>
+                    <a href="">Code</a>
+                </li>
+                <li>
+                    <a href="">VIP</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🍔 
+                </span>
+                <h3>Comida</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, asperiores veniam illo rem neque itaque quidem corrupti eum, cupiditate amet temporibus ipsum accusamus eligendi, mollitia fugiat dignissimos ex ullam minima.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">💻 </span>
+                <h3>CODE BABY</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda necessitatibus repellendus est, possimus ea optio quas mollitia, in quod vero vel. Harum, maxime quis sapiente facilis aliquid modi consectetur alias.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎵 </span>
+                <h3>music all night</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod debitis dolore iste accusantium odio quas nostrum et architecto? Ab delectus vitae id quam sapiente expedita deserunt officiis molestiae fugiat quos.</p>
+            </div>
+        </section>
+        <section class="about">
+            <video src="./y2mate.com - Justin Bieber  Peaches Remix ft Ludacris Usher  Snoop Dogg_v720P.mp4"></video>
+            <div class="about__details">
+                <h2>VAMOS A CODEAR</h2>
+                <p>Slim Profile, easy to hold and loaded whit cheese.</p>
+                <p>This is the one you have been waiting for</p>
+                <button>info plisssss &#10142;</button>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>instant grams</h2>
+            <img src="https://source.unsplash.com/random/200x200" alt="">
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+        </section>
+    </div>
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]')
+        ;
+        function toggleNav({ target }) {
+            const expandir = 
+                target.getAttribute('aria-expanded') === "true" || false; 
+            navButton.setAtrribute('aria-expanded', !expandir);
+        }
+        navButton.addEventListener('click', toggleNav);
+        
+    </script>
+</body>
+</html>
